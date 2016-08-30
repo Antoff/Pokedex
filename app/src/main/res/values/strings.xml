@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">PokeDex</string>
+
+    <string name="pokemon_name_hint">Pokemon Name</string>
+    <string name="type1_hint">Type 1</string>
+    <string name="type2_hint">Type 2</string>
+    <string name="weight">Вес:</string>
+    <string name="height">Рост:</string>
+    <string name="num">№</string>
+    <string name="weight_units">кг</string>
+    <string name="height_units">м</string>
+
+    <string name="cp_title">CP:</string>
+    <string name="hp_title">Здоровье:</string>
+    <string name="attack_title">Атака:</string>
+    <string name="defense_title">Защита:</string>
+    <string name="description_title">Описание</string>
+    <string name="base_stats_title">Статистика\nдля покемона с уровнем: </string>
+
+    <string name="base_attack_title">Базовая атака: </string>
+    <string name="base_defense_title">Базовая защита: </string>
+    <string name="base_stamina_title">Выносливость: </string>
+
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Ant\AndroidStudioProjects\PokeDex\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ad52ce0c36db09ac837c18b7d8e9476f2c3cd42e">
+        <dex dex="C:\Users\Ant\AndroidStudioProjects\PokeDex\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_b1a409f8b17f33656902775238c6a5dc0faffb09\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Ant\AndroidStudioProjects\PokeDex\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="C:\Users\Ant\AndroidStudioProjects\PokeDex\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.3.0_cc5275c749b3a2ae575ff132cd61ff5b2e54d3b9\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Ant\AndroidStudioProjects\PokeDex\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="C:\Users\Ant\AndroidStudioProjects\PokeDex\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.3.0_f7fdf94d97203eb38b2eeb28345beacf1011fc98\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Ant\AndroidStudioProjects\PokeDex\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="c1e3ffcc6ba1f9aea61eda13953b17c9c2ee3613">
+        <dex dex="C:\Users\Ant\AndroidStudioProjects\PokeDex\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_a527b4b11867dd62001d4aaa832e74a55dba873f\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Ant\AndroidStudioProjects\PokeDex\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="C:\Users\Ant\AndroidStudioProjects\PokeDex\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.3.0_80a5e3a7148106174da0219a4b7aa5abc3b488c4\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Ant\AndroidStudioProjects\PokeDex\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="C:\Users\Ant\AndroidStudioProjects\PokeDex\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.3.0_d1044ceca6b38321747f2a2b56148a5af1f39325\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Ant\AndroidStudioProjects\PokeDex\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="debf30ce0a7560396b6235edef77e447006454c2">
+        <dex dex="C:\Users\Ant\AndroidStudioProjects\PokeDex\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.3.0_3df3d10bcaf3a3f2e6a0e08956bc1634ea408f1f\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Ant\AndroidStudioProjects\PokeDex\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="C:\Users\Ant\AndroidStudioProjects\PokeDex\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.3.0_1db3c2bf1417d53e90df1a45c63a0fcef8673e2f\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Ant\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="C:\Users\Ant\AndroidStudioProjects\PokeDex\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.3.0_0b5889d829935bd8f87fddf64baa78126432cc8d\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Ant\AndroidStudioProjects\PokeDex\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="82ce13fd19cdfde0e392f03c27edeba8d4333648">
+        <dex dex="C:\Users\Ant\AndroidStudioProjects\PokeDex\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-23.3.0_f2398ab0283c2e13f10e2303d5515b23f9558538\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Ant\AndroidStudioProjects\PokeDex\app\build\intermediates\exploded-aar\com.android.support\gridlayout-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="003ebdacd5f75067b8724f92bd5eefa323d870aa">
+        <dex dex="C:\Users\Ant\AndroidStudioProjects\PokeDex\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-gridlayout-v7-23.3.0_0065d077b280849d3d04762d58ffae2647b55d69\classes.dex" />
+    </item>
+
+</items>

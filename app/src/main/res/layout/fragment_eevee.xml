@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout   android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+        <!--Блок с картинками-->
+        <LinearLayout android:id="@+id/pokemon_pics"
+                      android:orientation="vertical"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="2dp">
+
+            <!--Основная картинка-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <ImageView
+                    android:id="@+id/pokemon_img"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:scaleType="centerInside"
+                    android:adjustViewBounds="true"/>
+            </RelativeLayout>
+
+            <!--Блок эволюций Eevee-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--Блок покемона Vaporeon-->
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:columnCount="2"
+                    android:paddingBottom="1dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/forname">
+                    <TextView
+                        android:text="NextEvo"
+                        android:layout_columnSpan="2"
+                        android:layout_gravity="center_horizontal"/>
+                    <ImageView
+                        android:src="@drawable/p134"
+                        android:layout_columnSpan="2"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:scaleType="centerInside"
+                        android:adjustViewBounds="true"/>
+                    <TextView
+                        android:text="Vaporeon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_columnSpan="2"/>
+                    <ImageView
+                        android:background="@color/color_water"
+                        android:layout_gravity="fill_horizontal"
+                        android:layout_columnSpan="2"
+                        android:layout_marginLeft="1dp"
+                        android:layout_height="3dp"
+                        android:layout_columnWeight="1"/>
+                </GridLayout>
+
+                <!--Блок покемона Jolteon-->
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:columnCount="2"
+                    android:paddingBottom="1dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/forname">
+                    <TextView
+                        android:text="NextEvo"
+                        android:layout_columnSpan="2"
+                        android:layout_gravity="center_horizontal"/>
+                    <ImageView
+                        android:src="@drawable/p135"
+                        android:layout_columnSpan="2"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:scaleType="centerInside"
+                        android:adjustViewBounds="true"/>
+                    <TextView
+                        android:text="Jolteon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_columnSpan="2"/>
+                    <ImageView
+                        android:background="@color/color_electric"
+                        android:layout_gravity="fill_horizontal"
+                        android:layout_columnSpan="2"
+                        android:layout_marginLeft="1dp"
+                        android:layout_height="3dp"
+                        android:layout_columnWeight="1"/>
+                </GridLayout>
+
+                <!--Блок покемона Flareon-->
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:columnCount="2"
+                    android:paddingBottom="1dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/forname">
+                    <TextView
+                        android:text="NextEvo"
+                        android:layout_columnSpan="2"
+                        android:layout_gravity="center_horizontal"/>
+                    <ImageView
+                        android:src="@drawable/p136"
+                        android:layout_columnSpan="2"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:scaleType="centerInside"
+                        android:adjustViewBounds="true"/>
+                    <TextView
+                        android:text="Flareon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_columnSpan="2"/>
+                    <ImageView
+                        android:background="@color/color_fire"
+                        android:layout_gravity="fill_horizontal"
+                        android:layout_columnSpan="2"
+                        android:layout_marginLeft="1dp"
+                        android:layout_height="3dp"
+                        android:layout_columnWeight="1"/>
+                </GridLayout>
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+        <!--Блок имени, типов, статистики и остального-->
+        <!--Блок с именем-->
+        <LinearLayout
+            android:id="@+id/grid_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:paddingBottom="1dp"
+            android:background="@drawable/forname"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/pokemon_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/pokemon_name_hint"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:gravity="center_horizontal"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/line_type1"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_marginLeft="1dp"
+                    android:layout_height="2dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    />
+                <ImageView
+                    android:id="@+id/line_type2"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_marginRight="1dp"
+                    android:layout_height="2dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--Блок с типами-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp">
+
+            <TextView
+                android:id="@+id/pokemon_type1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="1dp"
+                />
+
+            <TextView
+                android:id="@+id/pokemon_type2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="1dp"
+                />
+
+        </LinearLayout>
+
+        <!--Вес, рост, номер-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="15dp">
+
+            <!--Вес и рост-->
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="3">
+                <!--Вес-->
+                <TextView
+                    android:text="@string/weight"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/pokemon_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"/>
+                <TextView
+                    android:text="@string/weight_units"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="5dp"/>
+                <!--Рост-->
+                <TextView
+                    android:text="@string/height"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/pokemon_height"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"/>
+                <TextView
+                    android:text="@string/height_units"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="5dp"/>
+            </GridLayout>
+
+            <!--Номер-->
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:textSize="24sp"
+                android:text="@string/num"/>
+            <TextView
+                android:id="@+id/number"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="3dp"
+                android:textSize="24sp"/>
+        </LinearLayout>
+
+        <!--Заголовок "Базовая статистика и выбор уровня"-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="@string/base_stats_title"/>
+            <Spinner
+                android:id="@+id/level_spiner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="bottom"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <!--Разделитель-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/separator"/>
+
+        <!--Блок статистики-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <!--Title-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="14sp"
+                    android:text=" "/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:textStyle="bold"
+                    android:text="@string/cp_title"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:textStyle="bold"
+                    android:text="@string/hp_title"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:textStyle="bold"
+                    android:text="@string/attack_title"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:textStyle="bold"
+                    android:text="@string/defense_title"/>
+            </LinearLayout>
+
+            <!--min Stats-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="14sp"
+                    android:text="min"/>
+                <TextView
+                    android:id="@+id/cp_min_value"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:id="@+id/hp_min_value"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:id="@+id/attack_min_value"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:id="@+id/defense_min_value"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <!--ProgressBars-->
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="14sp"
+                    android:text=" "/>
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:id="@+id/pb_cp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical|fill_horizontal"/>
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:id="@+id/pb_hp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical|fill_horizontal"/>
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:id="@+id/pb_attack"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical|fill_horizontal"/>
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:id="@+id/pb_defense"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical|fill_horizontal"/>
+            </LinearLayout>
+
+            <!--max Stats-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="14sp"
+                    android:text="max"/>
+                <TextView
+                    android:id="@+id/cp_max_value"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:id="@+id/hp_max_value"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:id="@+id/attack_max_value"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:id="@+id/defense_max_value"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--Блок описания-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/description_title"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/separator"/>
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
